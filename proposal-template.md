@@ -14,7 +14,7 @@ Look no further for the best travel deals! Tired of hooping from page to page to
 
 3. Miriam Santana
 
-4. Jiyan Wang
+4. Jiayu Wang
 
 ## Installation Instructions
 
