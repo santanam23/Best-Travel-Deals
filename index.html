@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Travel Deals</title>
-</head>
-
-<body>
-    <div class="Header">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Best Travel Deals </title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    
+    <body>
+    <header>
         <h1>BEST TRAVEL DEALS!</h1>
-        <div>
+        <nav>
             <ul>
                 <li>
                     <a href="#flight-deals">Flight Deals</a>
                 </li>
+
                 <li>
                     <a href="#transport-deals">Transport Deals</a>
                 </li>
+
                 <li>
-                    <a href="#contact-us">Contact Us</a>
+                    <a href="#contact-us">Conatct Us</a>
                 </li>
             </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Contact Our Agents Today</h3>
+            <p>Fill out the form below</p>
+            <form>
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+
+                <label for="email">Enter email address:</label>
+                <input type="text" placeholder="Email Address" name="email" id="email" class="form-input" />
+
+                <label for="phone">Enter telephone number:</label>
+                <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+    
+                <button type="submit">
+                    Start Traveling Today!
+                </button>  
+            </form>
         </div>
-    </div>
-</body>
+    </section>
+    
+    <section id="Info" class="intro">
+        <h2 class="section-title primary-border">Travel Headache Free!</h2>
+     <p>
+         Our Mission is to help take the headache out of your travel plans. We scan multiple websites to ensure you get 
+         the best bang for your buck.
+     </p>
+    </section>
+    
+    <footer>
+        <h2>Travel Deals Inc.</h2>
+    </footer>
+
+    </body>
+
 </html>
