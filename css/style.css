@@ -3,7 +3,16 @@
     padding: 0;
     box-sizing: border-box;
   }
-   
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}  
+
+collapse {
+    display: none;
+}
   /* Hero Style Start */
   .hero {
     background-image: url(/images/hero.jpg);
@@ -82,6 +91,25 @@
     border-radius: 0;
     padding: 30px;
     background-color:#033b61;
+    min-height: 50px;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
 }
 
 .navbar-brand {
