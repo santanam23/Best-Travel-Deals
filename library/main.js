@@ -1,4 +1,4 @@
-import { MY_API_KEY } from './config.js';
+//import { MY_API_KEY } from './config.js';
 
 fetch("https://google-flights-search.p.rapidapi.com/search?departure_airport_code=SFO&arrival_airport_code=LAX&flight_class=Economy", {
 	"method": "GET",
@@ -9,39 +9,41 @@ fetch("https://google-flights-search.p.rapidapi.com/search?departure_airport_cod
 })
 .then(response => response.json())
 .then(response => {
+
+  console.log("testingGoogle");
 	console.log(response);
 })
 .catch(err => {
 	console.error(err);
 });
 
-fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "hotels4.p.rapidapi.com",
-		"x-rapidapi-key": MY_API_KEY
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
-fetch("https://priceline-com.p.rapidapi.com/cars/location/search?q=Seattle", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "priceline-com.p.rapidapi.com",
-		"x-rapidapi-key": MY_API_KEY
-	}
-})
-.then(response => response.json())
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+// fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "hotels4.p.rapidapi.com",
+// 		"x-rapidapi-key": MY_API_KEY
+// 	}
+// })
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
+// fetch("https://priceline-com.p.rapidapi.com/cars/location/search?q=Seattle", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "priceline-com.p.rapidapi.com",
+// 		"x-rapidapi-key": MY_API_KEY
+// 	}
+// })
+// .then(response => response.json())
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
 // // Variables 
 
 // function start() {
