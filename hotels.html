@@ -41,42 +41,42 @@
             
         </div>
     </div>
-  
-    <div id="main">
-
-        <div class="container">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">Best Travel Deals</a>
-
-                    </div>
-
-                    <ul class="nav navbar-nav navbar-right navbar-header">
-
-                        <li><a onclick="openSearch()"><span class="glyphicon glyphicon-search"></span></a></li>
-                        <li>
-
-                            <a onclick="openNav()">
-                                <span class="glyphicon glyphicon-menu-hamburger"></span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class=" hamb">
-
-                    <!--                <a onclick="openNav()">-->
-                    <button data-toggle="collapse" data-target="#navres">
-
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>
-                    </button>
-
-                </div>
-
-            </nav>
-
+   <div class="about img pic2">
+            <p>Hotel Deals</p>
         </div>
+        <!--..-->
+    <div id="main" class="container flex-row justify-space-between">
+    
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search By Destination</h3>
+            <form id="user-form" class="card-body">
+              <label class="form-label" for="city">Search by City</label>
+              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+              <button type="submit" class="btn">Get City</button>
+            </form>
+          </div>
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search By Hotels</h3>
+            <div id="language-buttons" class="card-body">
+              <button class="btn" data="data-laguage">Location</button>
+              <button class="btn" data="data-laguage">Hotel Photo</button>
+              <button class="btn" data="data-laguage">Reviews</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search By Best Booking</h3>
+            <div id="language-buttons" class="card-body">
+              <button class="btn" data="data-laguage">Best Booking</button>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col-12 col-md-8">
+          <h2 class="subtitle">Showing List of Hotels: <span id="hotel-search-term"></span></h2>
+          <div id="hotel-container" class="list-group"></div>
+        </div>
+    </div>
 
         <div id="navres" class="collapse">
             <ul class="nav nav-stacked">
@@ -87,44 +87,13 @@
             </ul>
 
         </div>
-
-        <div class="about img pic2">
-            <p>Hotel Deals</p>
-        </div>
-        <!--..-->
-        <div class="container">
-            <div class="row short-row">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <p>This is an example of an about page. Unlike posts, pages are better suited for more timeless content that you want to be easily accessible, like your About or Contact information. Click the Edit link to make changes to this page or <a href="#">add another page.</a></p>
-                    <p>This is an example of an about page. Unlike posts, pages are better suited for more timeless content that you want to be easily accessible, like your About or Contact information. Click the Edit link to make changes to this page or <a href="#">add another page.</a></p>
-    
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <input type="text" placeholder="Search..">
-    
-                    <span>SIDEBAR TEXT WIDGET</span>
-                    <p>This is a text widget. The Text Widget allows you to add text or HTML to your sidebar. You can use a text widget to display text, links, images, HTML, or a combination of these. Edit them in the Widget section of the Customizer.</p>
-                </div>
-            </div>
-        </div>
-
         <!--    ----->
         <footer>
             <div class="container">
                 <div class="row text-cen">
 
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                        <ul class="text ">
-                            <span>Text About Webpage</span>
-                            <p>
-                                This is a text widget where we will put information about our location.
-                            </p>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                         <ul class="menus ">
-                            <span>Menu</span>
                             <li style="padding:0 0 12px 0; ">
                                 <a href="index.html">Home</a>
                             </li>
