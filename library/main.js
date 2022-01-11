@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //import { MY_API_KEY } from './config.js';
 
 // fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
@@ -93,8 +92,6 @@ fetch("https://booking-com.p.rapidapi.com/v1/hotels/search?room_number=1&order_b
 //       let apiTransp="https://api.goswift.ly";
 //       let apiTraAdv = "https://skyscanner-flights.p.rapidapi.com/results";
 //       let apisky= "https://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/{country}/{currency}/{locale}/{originPlace}/{destinationPlace}/{outboundPartialDate}/{inboundPartialDate}?apiKey={key}";
-=======
->>>>>>> fb3ef9ec69b3d59f1af0401df3de99784416cff8
 
     function start() {
  
@@ -130,47 +127,6 @@ fetch("https://booking-com.p.rapidapi.com/v1/hotels/search?room_number=1&order_b
         });
     
         
-<<<<<<< HEAD
-
-// var options = {
-//   method: 'GET',
-//   url: apiTraAdv
-// };
-
-
-//                 // Local storage
-//                 localStorage.setItem('', JSON.stringify());
-//     }
-
-//     }
-//      for (let i = 0; i < localStorage.length; i++) {
-
-//         let item = localStorage.getItem(i);
-//         let items = $(".list").addClass("list");
-//     }
-// // deals page function
-//     function dealsUbber() {
-
-//       //  get Api's info
-
-//       let apiTransp="https://api.goswift.ly";
-//       let apiTraAdv = "https://skyscanner-flights.p.rapidapi.com/results";
-//       let apisky= "https://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/{country}/{currency}/{locale}/{originPlace}/{destinationPlace}/{outboundPartialDate}/{inboundPartialDate}?apiKey={key}";
-
-        
-
-// var options = {
-//   method: 'GET',
-//   url: apiTraAdv
-// };
-
-
-//                 // Local storage
-//                 localStorage.setItem('', JSON.stringify());
-//     }
-
-//     start();
-=======
         let origin="SFO";
         let dest ="LAX";
         let date="2022-01-10"
@@ -283,4 +239,3 @@ fetch("https://booking-com.p.rapidapi.com/v1/hotels/search?room_number=1&order_b
         
     start();
 
->>>>>>> fb3ef9ec69b3d59f1af0401df3de99784416cff8
