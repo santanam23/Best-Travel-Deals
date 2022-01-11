@@ -42,7 +42,7 @@
         function searchFlightList() {
            // FligtListEl.innerHTML = "";
            // console.log("FligtListEl");
-             console.log(listStor.length);
+             console.log(listStor.length +" listor lenght");
             for (let i = 0; i < listStor.length; i++) {
     
                 const histValue = document.createElement("input");
@@ -70,19 +70,19 @@
  function dealsFlight(origin,dest) {
             console.log("before res");
 
-//             fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "hotels4.p.rapidapi.com",
-// 		"x-rapidapi-key": "75fdea64c3msh809717eb693e58ap1d7d95jsn5d21a51f7ee3"
-// 	}
-// })
-// .then(response => {
-// 	console.log(response);
-// })
-// .catch(err => {
-// 	console.error(err);
-// });
+            fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "hotels4.p.rapidapi.com",
+                    "x-rapidapi-key": "75fdea64c3msh809717eb693e58ap1d7d95jsn5d21a51f7ee3"
+                }
+            })
+            .then(response => {
+                console.log(response);
+            })
+            .catch(err => {
+                console.error(err);
+            });
 
 
 //              fetch("https://google-flights-search.p.rapidapi.com/search?departure_airport_code="+origin+"&arrival_airport_code="+dest+"&departure_date="+date+"&flight_class=Economy", {
