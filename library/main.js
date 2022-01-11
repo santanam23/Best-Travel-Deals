@@ -43,6 +43,20 @@ fetch("https://priceline-com.p.rapidapi.com/cars/location/search?q=Seattle", {
 .catch(err => {
 	console.error(err);
 });
+
+fetch("https://best-booking-com-hotel.p.rapidapi.com/booking/best-accommodation?cityName=Houston&countryName=USA", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "best-booking-com-hotel.p.rapidapi.com",
+		"x-rapidapi-key": "c0191d5e50msh3302e10f04da19bp1776bcjsne7f965d29469"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
 // // Variables 
 
 // function start() {
