@@ -1,19 +1,24 @@
+var MY_API_KEY = "04bd301f6cmsh1b338aaf14cd39cp1a4eabjsn9117173b8711"
+
+var today = moment().format('L');
+
+fetch("https://booking-com.p.rapidapi.com/v1/hotels/reviews?hotel_id=1676161&locale=en-us&sort_type=SORT_MOST_RELEVANT&customer_type=solo_traveller%2Creview_category_group_of_friends&language_filter=en-us", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "booking-com.p.rapidapi.com",
+		"x-rapidapi-key": MY_API_KEY
+	}
+})
+.then((response)=> response.json())
+.then((data)=> console.log(data))
+.catch(err => {
+    console.error(err);
+});
 
 //import { MY_API_KEY } from './config.js';
 // import { mjApi } from "./config.js";
 
-// fetch("https://booking-com.p.rapidapi.com/v1/hotels/reviews?hotel_id=1676161&locale=en-us&sort_type=SORT_MOST_RELEVANT&customer_type=solo_traveller%2Creview_category_group_of_friends&language_filter=en-us", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "booking-com.p.rapidapi.com",
-// 		"x-rapidapi-key": "04bd301f6cmsh1b338aaf14cd39cp1a4eabjsn9117173b8711"
-// 	}
-// })
-// .then((response)=> response.json())
-// .then((data)=> console.log(data))
-// .catch(err => {
-//     console.error(err);
-// });
+
 
 // fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
 // 	"method": "GET",
