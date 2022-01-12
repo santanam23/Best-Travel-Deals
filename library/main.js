@@ -67,40 +67,40 @@ function start() {
     searchHistor();
 
 */
-  function dealsRoom(cityName) {
-    fetch("https://booking-com.p.rapidapi.com/v1/hotels/locations?name="+cityName+"&locale=en-us", {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "booking-com.p.rapidapi.com",
-        "x-rapidapi-key": "75fdea64c3msh809717eb693e58ap1d7d95jsn5d21a51f7ee3"
-      }
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+//   function dealsRoom(cityName) {
+//     fetch("https://booking-com.p.rapidapi.com/v1/hotels/locations?name="+cityName+"&locale=en-us", {
+//       "method": "GET",
+//       "headers": {
+//         "x-rapidapi-host": "booking-com.p.rapidapi.com",
+//         "x-rapidapi-key": "75fdea64c3msh809717eb693e58ap1d7d95jsn5d21a51f7ee3"
+//       }
+//     })
+//       .then((res) => res.json())
+//       .then((res) => {
+//         console.log(res);
+//       })
+//       .catch((err) => {
+//         console.error(err);
+//       });
       
-    console.log("before res");
+//     console.log("before res");
     
 
-    fetch("https://booking-com.p.rapidapi.com/v1/hotels/room-list?locale=en-us&checkin_date="+arrival+"&hotel_id=4190847&adults_number_by_rooms="+guessNumb+"&checkout_date="+leaving+"&currency=USD&units=imperial", {
-	   "method": "GET",
-	   "headers": {
-		   "x-rapidapi-host": "booking-com.p.rapidapi.com",
-		   "x-rapidapi-key": "75fdea64c3msh809717eb693e58ap1d7d95jsn5d21a51f7ee3"
-	}
-})
-.then((res) => res.json())
-.then((res) => {console.log(res);
-})
-.catch((err) => {
-  console.error(err);
-});
+//     fetch("https://booking-com.p.rapidapi.com/v1/hotels/room-list?locale=en-us&checkin_date="+arrival+"&hotel_id=4190847&adults_number_by_rooms="+guessNumb+"&checkout_date="+leaving+"&currency=USD&units=imperial", {
+// 	   "method": "GET",
+// 	   "headers": {
+// 		   "x-rapidapi-host": "booking-com.p.rapidapi.com",
+// 		   "x-rapidapi-key": "75fdea64c3msh809717eb693e58ap1d7d95jsn5d21a51f7ee3"
+// 	}
+// })
+// .then((res) => res.json())
+// .then((res) => {console.log(res);
+// })
+// .catch((err) => {
+//   console.error(err);
+// });
 
-console.log("before res");
+// console.log("before res");
 
 
     if (guessNumb != "" && arrival != "" && leaving !="") {
