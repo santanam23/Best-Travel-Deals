@@ -1,7 +1,4 @@
 
-//import { MY_API_KEY } from './config.js';
-// import { mjApi } from "./config.js";
-
 fetch("https://booking-com.p.rapidapi.com/v1/hotels/reviews?hotel_id=1676161&locale=en-us&sort_type=SORT_MOST_RELEVANT&customer_type=solo_traveller%2Creview_category_group_of_friends&language_filter=en-us", {
 	"method": "GET",
 	"headers": {
