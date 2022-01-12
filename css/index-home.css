@@ -156,6 +156,10 @@ body {
     background-image: url('../images/About-us.png');
     margin-bottom: 10px;
 }
+.pic2 {
+    background-image: url('../images/mission.jpeg');
+    margin-bottom: 10px;
+}
 
 .pic3 {
     background-image: url('../images/hotel.jpeg');

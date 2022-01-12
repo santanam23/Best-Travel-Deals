@@ -3,6 +3,44 @@
     padding:0;
     font-family:Arial, Helvetica, sans-serif;
 }
+/* Nav Bar Style Start */
+.container a {
+    color: rgb(247, 251, 252);
+    font-size:60px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+}
+.navbar {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background-color:#033b61;
+}
+ /* Nav Bar Style End */
+
+
+
+/* Hidden Nav Bar Start */
+.navbar-nav a {
+    font-size: 1px;
+    border: 10px solid rgb(221, 218, 7);
+    border-radius: 60px;
+}
+
+.navbar-nav li a:hover {
+    cursor: pointer;
+    font-size: 1px;
+    border: 10px solid rgb(94, 200, 233);
+    border-radius: 60px;
+}
+/* Hidden Nav Bar End */
+
 img {
     height:100%;
     width:100%;
