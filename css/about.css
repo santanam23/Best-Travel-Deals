@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-size:100%;
+    background-position:center center;
+    position:relative;
+}
+.collapse {
+    display: none;
+}
+
+
+
+/* Nav Bar Style Start */
+.container a {
+    color: rgb(247, 251, 252);
+    font-size:60px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+}
+.navbar {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background-color:#033b61;
+}
+ /* Nav Bar Style End */
+
+
+
+/* Hidden Nav Bar Start */
+.navbar-nav a {
+    font-size: 1px;
+    border: 10px solid rgb(221, 218, 7);
+    border-radius: 60px;
+}
+
+.navbar-nav li a:hover {
+    cursor: pointer;
+    font-size: 1px;
+    border: 10px solid rgb(94, 200, 233);
+    border-radius: 60px;
+}
+/* Hidden Nav Bar End */
+
+
+
+/* overlay Style Start */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.96;
+    top: 0;
+    transition: 0.15s;
+    left: 0;
+    background-color: #111;
+    overflow-y: hidden;
+}
+.overlay-content {
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.overlay-content a {
+    padding: 20px;
+    text-decoration:none;
+    color: white;
+    display: block;
+}
+.overlay-content a:hover,
+.overlay-content a:focus {
+    border-bottom: 4px solid #fff;
+    text-decoration: none;
+    color: rgb(162, 166, 175);
+    border-color:rgb(162, 166, 175);
+}
+.hamb button {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 12px;
+    border: none;
+    background: #333;
+    color: white;
+}
+/* overlay Style End */
+
+
+
+/* Content Style Start */
+.about-pic {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about p {
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Content Style End */
+
+
+
+/* Footer Style Start */
+footer {
+    background-color: #333;
+    padding: 5px 10px;
+    color: #555;
+    font-family: sans-serif;
+}
+.menus span {
+    color: #ccc;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.menus li a {
+    color: #ccc;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+ul {
+    list-style: none;
+}
+.menus li {
+    padding: 5px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    display:inline-block;
+}
+.menus li a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+.main-foot {
+    position:relative;
+    background: #0464a4;
+    background-size: cover;
+    color: #033b61;
+    padding: 5px 10px;
+}
+.main-foot p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+}
+/* Footer Style End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 894px) {
+    .pic {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 382px) {
+    .pl {
+        width : 100%;
+        text-align: center;
+    }
+    .social {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hamb {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .navbar-right {
+        display: none;
+    }
+    .location li p,
+    .menus li a,
+    .text p,
+    .short-row p,
+    .arow p {
+        font-size: 17px;
+    }
+    .location li p {
+        text-align: center;
+    }
+    .short-row span,
+    .location span,
+    .menus span,
+    .text span {
+        font-size: 17px;
+        text-align: center;
+    }
+    .short-row span,
+    .text span {
+        text-align: left;
+    }
+    .navbar {
+        padding: 0px;
+    }
+    .image {
+        height: 200px;
+        padding: 0px;
+    }
+    .image p {
+        width: 90%;
+        font-size: 17px;
+    }
+    .pic,
+    .img {
+        height: 150px;
+        width: 100%;
+    }
+    .menus {
+        text-align: center;
+    }
+    .text-cen span {
+        border-top: 1px solid #555;
+        text-align: center;
+    }
+    .text-cen .location span {
+        border-top: none;
+    }
+    .blogpic {
+        width: 60%;
+    }
+    .navbar {
+        padding: 0;
+        margin: 0;
+    }
+    .blogs .blogpic {
+        height: 200px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .navbar-brand {
+        font-size: 23px;
+    }
+    .blogs .head {
+        font-size: 20px;
+    }
+    .blogs .blogpic {
+        height: 200px;
+    }
+    .blogs .blogpic {
+        height: 180px;
+        width: 80%;
+    }
+}
