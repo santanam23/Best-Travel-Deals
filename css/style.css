@@ -4,16 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
   }
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
+    position: relative;
 }  
-.container-main {
-    
-}
+
 
 .collapse {
     display: none;
@@ -136,7 +137,7 @@
     display: block;
     border-radius: 0;
     padding: 30px;
-    background-color:#033b61;
+    background-image: url(/images/person.jpg);
     min-height: 50px;
     border: 1px solid transparent;
     border-top-color: transparent;
@@ -306,9 +307,12 @@ ul {
 }
 
 .pic3 {
-    background-image: url(../images/travel.jpeg);
+    background-image: url(../images/p-3.jpg);
 }
 
+.pic4 {
+    background-image: url(../images/hotel.lobby.jpeg);
+}
 .pic:hover {
     cursor: pointer;
     opacity: 0.7;
