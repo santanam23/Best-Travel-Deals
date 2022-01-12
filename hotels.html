@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/hotel.css"> 
 </head>
     
 
@@ -58,8 +58,6 @@
                     </div>
 
                     <ul class="nav navbar-nav navbar-right navbar-header">
-
-                        <li><a onclick="openSearch()"><span class="glyphicon glyphicon-search"></span></a></li>
                         <li>
 
                             <a onclick="openNav()">
@@ -86,14 +84,18 @@
         <div id="navres" class="collapse">
             <ul class="nav nav-stacked">
                 <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="login-register.html">Login & Register</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="hotels.html">Hotel Deals</a></li>
                 
             </ul>
-
         </div>
 
+
+
+
         <div class="about img pic2">
+            <img type="background" class="hotel-pic" src="images/hotel-page.jpeg">
             <p>Hotel Deals</p>
         </div>
         <!--..-->
@@ -162,27 +164,48 @@
             <div class="container ">
                 <p class="pull-left pl">Coded with <span class="glyphicon glyphicon-heart ">
                 </span> by Travel Deals LLC. | Best Travel Deals &copy;</p>
-                <ul class="social pull-right ">
-
-                    <li>
-                        <a href="# "><i class="fa fa-facebook "></i></a>
-                    </li>
-
-                    <li>
-                        <a href="# "><i class="fa fa-twitter "></i></a>
-                    </li>
-
-
-                    <li>
-                        <a href="# "><i class="fa fa-pinterest "></i></a>
-                    </li>
-
-                    <li>
-                        <a href="# "><i class="fa fa-linkedin "></i></a>
-                    </li>
-                </ul>
+                <div class="icons" id="icons">
+                    <style>
+                        .fa {
+                        padding:5px;
+                        font-size:3px;
+                        width:80px;
+                        text-align:center;
+                        text-decoration:none;
+                        margin:5px 5px;
+                        border-radius:30px;
+                        box-shadow:0 0 20px 0 #7f7f7f3d;
+                        cursor:pointer;
+                        }
+                        
+                        .fa:hover {
+                            opacity:0.7;
+                        }
+                        
+                        .fa-facebook {
+                        background:#3B5998;
+                        color:white;
+                        }
+                        
+                        .fa-twitter {
+                        background:#55ACEE;
+                        color:white;
+                        }
+                        
+                        .fa-google {
+                        background:#dd4b39;
+                        color:white;
+                        }
+                    </style>
+                    <!-- Add font awesome icons -->
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.google.com" class="fa fa-google"></a>
+                </div>
             </div>
         </div>
+
+        
     </div>
     <script src="./library/script.js"></script>
     <script src="./library/main.js"></script>

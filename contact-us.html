@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Best Travel Deals</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css"> </head>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact-us.css"> 
+</head>
+    
 <body>
     <div id="myNav" class="overlay container">
         <div class="container">
@@ -17,14 +20,11 @@
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">Best Travel Deals</a>
                     </div>
-
+                   
                     <ul class="nav navbar-nav navbar-right navbar-header">
-
                         <li>
-
-                            <a onclick="closeNav()">
+                            <a onclick="closeNav()"> 
                                 <span class="glyphicon glyphicon-remove"></span>
-
                             </a>
                         </li>
                     </ul>
@@ -37,7 +37,6 @@
         <div class="overlay-content">
             <a href="index.html">Home</a>
             <a href="login-register.html">Login & Register</a>
-            <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
             <a href="hotels.html">Hotel Deals</a>
             
@@ -66,7 +65,7 @@
                 </div>
                 <div class=" hamb">
 
-                    <!--                <a onclick="openNav()">-->
+                    <!--<a onclick="openNav()">-->
                     <button data-toggle="collapse" data-target="#navres">
 
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -83,64 +82,69 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="login-register.html">Login & Register</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="hotels.html">Hotel Deals</a></li>
-                
+                <li><a href="hotels.html">Hotel Deals</a></li> 
             </ul>
+
         </div>
 
-
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Contact Our Agents Today</h3>
+                <p>Fill out the form below</p>
+                <form>
+                    <label for="name">Enter full name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+    
+                    <label for="email">Enter email address:</label>
+                    <input type="text" placeholder="Email Address" name="email" id="email" class="form-input" />
+    
+                    <label for="phone">Enter telephone number:</label>
+                    <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
         
-        <div class="about img pic3">
-            <img type="background" class="about-pic" src="./images/About-us.png">
-            <p>About Us</p>
-        </div>
-        <!--..-->
-        <div class="container">
-            <div class="row short-row">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <p>We have created a website to help find the best travel/hotel deals. We want our clients to get the best deals out there. This is why we created a website where we find the deals for our clients. Planning a vacation should not have to be constly. We believe is a budget friendly vacation.</a></p>
-    
-                </div>
+                    <button type="submit">
+                        Start Traveling Today!
+                    </button>  
+                </form>
             </div>
-        </div>
+        </section>
 
-        <!--    ----->
-        <footer>
-            <div class="container">
-                <div class="row text-cen">
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                        <ul class="menus ">
-                            <li style="padding:0 0 12px 0; ">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="login-register.html">Login & Register</a>
-                            </li>
-    
-                            <li>
-                                <a href="about.html">About Us</a>
-                            </li>
-    
-                            <li>
-                                <a href="hotels.html">Hotel Deals</a>
-                            </li>
+        <div class="Susan">
+            <footer>
+                <div class="container">
+                    <div class="row text-cen">
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                            <ul class="menus ">
+                                <span>Menu</span>
+                                <li style="padding:0 0 12px 0; ">
+                                    <a href="index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+
+                                <li>
+                                    <a href="hotels.html">Hotel Deals</a>
+                                </li>
+
                             
-                        </ul>
+                            </ul>
+                        </div>
+
+
                     </div>
-
-
                 </div>
-            </div>
+            </footer>
 
 
-        </footer>
-        <div class="main-foot ">
-            <div class="container ">
-                <p class="pull-left pl">Coded with <span class="glyphicon glyphicon-heart ">
-                </span> by Travel Deals LLC. | Best Travel Deals &copy;</p>
-                <div class="icons" id="icons">
-                    <style>
+            <div class="main-foot ">
+                <div class="container ">
+                    <p class="pull-left pl">Coded with <span class="glyphicon glyphicon-heart ">
+                    </span> by Travel Deals LLC. | Best Travel Deals &copy;</p>
+                    <div class="icons" id="icons">
+                        <style>
                         .fa {
                         padding:5px;
                         font-size:3px;
@@ -171,17 +175,19 @@
                         background:#dd4b39;
                         color:white;
                         }
-                    </style>
-                    <!-- Add font awesome icons -->
-                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                    <a href="https://twitter.com" class="fa fa-twitter"></a>
-                    <a href="https://www.google.com" class="fa fa-google"></a>
+                        </style>
+                        <!-- Add font awesome icons -->
+                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter"></a>
+                        <a href="https://www.google.com" class="fa fa-google"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="/library/script.js"></script>
-    <script src="/library/main.js"></script>
-    </body>
+</body>
 
+    <script src="./library/config.js"></script>
+    <script src="./library/script.js"></script>
+    <script src="./library/main.js"></script>
 </html>
