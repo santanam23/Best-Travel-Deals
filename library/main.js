@@ -1,6 +1,5 @@
 
-//import { MY_API_KEY } from './config.js';
-import { mjApi } from "./config.js";
+
 
 /*
 fetch("https://hotels4.p.rapidapi.com/locations/v2/search?query=new%20york&locale=en_US&currency=USD", {
