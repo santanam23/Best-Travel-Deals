@@ -342,10 +342,13 @@ ul {
 }
 
 .about {
-    height: 450px;
-    width: 100%;
-    background-size: cover;
+    background-size: initial;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 772px;
+    font-size: 27px;
+    font-weight: 600;
 }
 
 hr {
