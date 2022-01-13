@@ -102,9 +102,6 @@
         <div class="container">
             <div class="row short-row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <p>This is an example of an about page. Unlike posts, pages are better suited for more timeless content that you want to be easily accessible, like your About or Contact information. Click the Edit link to make changes to this page or <a href="#">add another page.</a></p>
-                    <p>This is an example of an about page. Unlike posts, pages are better suited for more timeless content that you want to be easily accessible, like your About or Contact information. Click the Edit link to make changes to this page or <a href="#">add another page.</a></p>
-    
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <input type="text" class="inputOrigin col-3" id="inputOrigi" placeholder="Enter 3 origin code">
@@ -118,15 +115,30 @@
                         <button class="btn btn-primary mb-3" type="button" id="clear">Clear</button>
                         <form  class ="list" id="list"></form>
                          <!-- clear stor -->
-                   <a id="clearStor" href="#"></a>   
+                   <a id="clearStor" href="#"></a>  
+
                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <input type="text" placeholder="Search..">
-    
-                    <span>SIDEBAR TEXT WIDGET</span>
-                    <p>This is a text widget. The Text Widget allows you to add text or HTML to your sidebar. You can use a text widget to display text, links, images, HTML, or a combination of these. Edit them in the Widget section of the Customizer.</p>
+               <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <h3 class="container-header text-uppercase">Search By Hotels</h3>
+                <div id="language-buttons" class="container-body">
+                  <button class="btn" data="data-laguage">Location</button>
+                  <button class="btn" data="data-laguage">Hotel Photo</button>
+                  <button class="btn" data="data-laguage">Reviews</button>
                 </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <h3 class="container-header text-uppercase">Search By Best Booking</h3>
+                <div id="language-buttons" class="container-body">
+                  <button class="btn" data="data-laguage">Best Booking</button>
+                </div>
+              </div>
+        </div>
+           
+            <div class="col-12 col-md-8">
+              <h2 class="subtitle">Showing List of Hotels: <span id="hotel-search-term"></span></h2>
+              <div id="hotel-container" class="list-group"></div>
             </div>
+    
         </div>
 
         <!--    ----->
