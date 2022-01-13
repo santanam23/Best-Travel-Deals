@@ -104,7 +104,7 @@ img {
     width:100%;
     background-position:center center;
     background-size:cover;
-    position:absolute;
+    position:relative;
 }
 .form-box {
     width:380px;
@@ -192,7 +192,60 @@ span {
     left:450px;
 }
 
-
+/* Footer Style Start */
+footer {
+    background-color: #333;
+    padding: 5px 10px;
+    color: #555;
+    font-family: sans-serif;
+}
+.menus span {
+    color: #ccc;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.menus li a {
+    color: #ccc;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+ul {
+    list-style: none;
+}
+.menus li {
+    padding: 5px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    display:inline-block;
+}
+.menus li a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+.main-foot {
+    position:relative;
+    background: #0464a4;
+    background-size: cover;
+    color: #033b61;
+    padding: 5px 10px;
+}
+.main-foot p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+}
+/* Footer Style End */
 @media only screen and (max-width: 894px) {
     .pic {
         margin: 0 auto;
