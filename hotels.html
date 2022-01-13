@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css"> </head>
+    <link rel="stylesheet" type="text/css" href="./css/hotel.css"> 
+</head>
+    
 
 <body>
     <div id="myNav" class="overlay container">
@@ -37,55 +38,97 @@
         <!--        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
         <div class="overlay-content">
             <a href="index.html">Home</a>
+            <a href="Susan.html">Our Mission</a>
+            <a href="login-register.html">Login & Register</a>
             <a href="about.html">About Us</a>
             <a href="hotels.html">Hotel Deals</a>
             
         </div>
     </div>
-        
-        <!--..-->
-    <div id="main" class="container-main flex-row justify-space-between">
-        <div class="about img pic2"></div>
-        <div class="col-12 col-md-4">
-          <div class="container">
-            <h3 class="container-header text-uppercase">Welcome To Your Hotel Deals</h3>
-            <form id="user-form" class="container-body">
-              <label class="form-label" for="city">Search by City</label>
-              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-              <button type="submit" class="btn">Get City</button>
-            </form>
-          </div>
-          <div class="container">
-            <h3 class="container-header text-uppercase">Search By Hotels</h3>
-            <div id="language-buttons" class="container-body">
-              <button class="btn" data="data-laguage">Location</button>
-              <button class="btn" data="data-laguage">Hotel Photo</button>
-              <button class="btn" data="data-laguage">Reviews</button>
-            </div>
-          </div>
-          <div class="container">
-            <h3 class="container-header text-uppercase">Search By Best Booking</h3>
-            <div id="language-buttons" class="container-body">
-              <button class="btn" data="data-laguage">Best Booking</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-12 col-md-8">
-          <h2 class="subtitle">Showing List of Hotels: <span id="hotel-search-term"></span></h2>
-          <div id="hotel-container" class="list-group"></div>
+  
+    <div id="main">
+
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Best Travel Deals</a>
+
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+
+                            <a onclick="openNav()">
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class=" hamb">
+
+                    <!--                <a onclick="openNav()">-->
+                    <button data-toggle="collapse" data-target="#navres">
+
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+
+                </div>
+
+            </nav>
+
         </div>
     </div>
 
         <div id="navres" class="collapse">
             <ul class="nav nav-stacked">
                 <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="login-register.html">Login & Register</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="hotels.html">Hotel Deals</a></li>
                 
             </ul>
-
         </div>
+
+
+
+
+        <div class="about img pic2">
+            <img type="background" class="hotel-pic" src="images/hotel-page.jpeg">
+            <p>Hotel Deals</p>
+        </div>
+        <!--..-->
+        <div class="container">
+            <div class="row short-row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <p>This is an example of an about page. Unlike posts, pages are better suited for more timeless content that you want to be easily accessible, like your About or Contact information. Click the Edit link to make changes to this page or <a href="#">add another page.</a></p>
+                    <p>This is an example of an about page. Unlike posts, pages are better suited for more timeless content that you want to be easily accessible, like your About or Contact information. Click the Edit link to make changes to this page or <a href="#">add another page.</a></p>
+    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" class="inputOrigin col-3" id="inputOrigi" placeholder="Enter 3 origin code">
+                    <input type="text" class="inputDest col-3" id="inputDesti" placeholder="Enter 3 destination code">
+                    <br>
+                    <br>
+                    <div class="appendList"></div>
+                    <button class="btn btn-primary searchBtn" type="button" id="search" value="search">
+                             <i class="fas fa-search"></i> 
+                        </button>
+                        <button class="btn btn-primary mb-3" type="button" id="clear">Clear</button>
+                        <form  class ="list" id="list"></form>
+                         <!-- clear stor -->
+                   <a id="clearStor" href="#"></a>   
+               </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <input type="text" placeholder="Search..">
+    
+                    <span>SIDEBAR TEXT WIDGET</span>
+                    <p>This is a text widget. The Text Widget allows you to add text or HTML to your sidebar. You can use a text widget to display text, links, images, HTML, or a combination of these. Edit them in the Widget section of the Customizer.</p>
+                </div>
+            </div>
+        </div>
+
         <!--    ----->
         <footer>
             <div class="container">
@@ -96,15 +139,20 @@
                             <li style="padding:0 0 12px 0; ">
                                 <a href="index.html">Home</a>
                             </li>
-
+                            <li>
+                                <a href="Susan.html">Our Mission</a>
+                            </li>
+                            <li>
+                                <a href="login-register.html">Login & Register</a>
+                            </li>
+    
                             <li>
                                 <a href="about.html">About Us</a>
                             </li>
-
+    
                             <li>
                                 <a href="hotels.html">Hotel Deals</a>
                             </li>
-
                             
                         </ul>
                     </div>
@@ -119,27 +167,48 @@
             <div class="container ">
                 <p class="pull-left pl">Coded with <span class="glyphicon glyphicon-heart ">
                 </span> by Travel Deals LLC. | Best Travel Deals &copy;</p>
-                <ul class="social pull-right ">
-
-                    <li>
-                        <a href="# "><i class="fa fa-facebook "></i></a>
-                    </li>
-
-                    <li>
-                        <a href="# "><i class="fa fa-twitter "></i></a>
-                    </li>
-
-
-                    <li>
-                        <a href="# "><i class="fa fa-pinterest "></i></a>
-                    </li>
-
-                    <li>
-                        <a href="# "><i class="fa fa-linkedin "></i></a>
-                    </li>
-                </ul>
+                <div class="icons" id="icons">
+                    <style>
+                        .fa {
+                        padding:5px;
+                        font-size:3px;
+                        width:80px;
+                        text-align:center;
+                        text-decoration:none;
+                        margin:5px 5px;
+                        border-radius:30px;
+                        box-shadow:0 0 20px 0 #7f7f7f3d;
+                        cursor:pointer;
+                        }
+                        
+                        .fa:hover {
+                            opacity:0.7;
+                        }
+                        
+                        .fa-facebook {
+                        background:#3B5998;
+                        color:white;
+                        }
+                        
+                        .fa-twitter {
+                        background:#55ACEE;
+                        color:white;
+                        }
+                        
+                        .fa-google {
+                        background:#dd4b39;
+                        color:white;
+                        }
+                    </style>
+                    <!-- Add font awesome icons -->
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.google.com" class="fa fa-google"></a>
+                </div>
             </div>
         </div>
+
+        
     </div>
     <script src="./library/script.js"></script>
     <script src="./library/main.js"></script>

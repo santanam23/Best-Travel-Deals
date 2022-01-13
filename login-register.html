@@ -13,6 +13,87 @@
     
 </head>
 <body>
+    <div id="myNav" class="overlay container">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Best Travel Deals</a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+
+                        <li>
+
+                            <a onclick="closeNav()">
+                                <span class="glyphicon glyphicon-remove"></span>
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+        <!--        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="Susan.html">Our Mission</a>
+            <a href="about.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="login-register.html">Login & Register</a>
+            <a href="hotels.html">Hotel Deals</a>
+            
+        </div>
+    </div>
+  
+    <div id="main">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Best Travel Deals</a>
+
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+
+                            <a onclick="openNav()">
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class=" hamb">
+
+                    <!--                <a onclick="openNav()">-->
+                    <button data-toggle="collapse" data-target="#navres">
+
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div id="navres" class="collapse">
+            <ul class="nav nav-stacked">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Susan.html">Our Mission</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="login-register.html">Login & Register</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="hotels.html">Hotel Deals</a></li>
+                
+            </ul>
+
+        </div>
+
     <div class="hero">
         <img src="./images/login.jpg">
         <div class="form-box">
@@ -55,9 +136,9 @@
                     }
                 </style>
                 <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.google.com" class="fa fa-google"></a>
             </div>
             <form class="input-group" id="login">
                 <input type="text" class="input-field" placeholder="User ID" required>
@@ -76,6 +157,75 @@
         </div>
         
     </div>
+</div>
+    <footer>
+        <div class="container">
+            <div class="row text-cen">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <ul class="text ">
+                        <span>Text About Webpage</span>
+                        <p>
+                            This is a text widget where we will put information about our location.
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <ul class="menus ">
+                        <li style="padding:0 0 12px 0; ">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Susan.html">Our Mission</a>
+                        </li>
+
+                        <li>
+                            <a href="login-register.html">Login & Register</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="hotels.html">Hotel Deals</a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="main-foot ">
+        <div class="container ">
+            <p class="pull-left pl">Coded with <span class="glyphicon glyphicon-heart ">
+            </span> by Travel Deals LLC. | Best Travel Deals &copy;</p>
+            <ul class="social pull-right ">
+
+                <li>
+                    <a href="# "><i class="fa fa-facebook "></i></a>
+                </li>
+
+                <li>
+                    <a href="# "><i class="fa fa-twitter "></i></a>
+                </li>
+
+
+                <li>
+                    <a href="# "><i class="fa fa-pinterest "></i></a>
+                </li>
+
+                <li>
+                    <a href="# "><i class="fa fa-linkedin "></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
     <script>
         var x=document.getElementById("login");
         var y=document.getElementById("register");
@@ -95,6 +245,6 @@
     </script>
 
 
-
+<script src="library/script.js"></script>
 </body>
 </html>
