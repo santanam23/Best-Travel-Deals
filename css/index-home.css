@@ -13,8 +13,6 @@ body {
     display: none;
 }
 
-
-
 /* Nav Bar Style Start */
 .container a {
     color: rgb(247, 251, 252);
@@ -156,14 +154,15 @@ body {
     background-image: url('../images/About-us.png');
     margin-bottom: 10px;
 }
+.pic2 {
+    background-image: url('../images/mission.jpeg');
+    margin-bottom: 10px;
+}
 
 .pic3 {
     background-image: url('../images/hotel.jpeg');
     margin-bottom: 10px;
 }
-
-
-
 
 
 /* Footer Style Start */
@@ -220,22 +219,6 @@ ul {
     margin-left: 30px;
 }
 /* Footer Style End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 894px) {
